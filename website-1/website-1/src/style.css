@@ -1,0 +1,133 @@
+/*******************
+CSS reset
+
+blue #CAEDEB
+D-blue #9DB3B1
+black #2B221E
+gray #A3A3A3
+d-gray #808080
+*******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #2B221E;
+}
+
+
+/*******************
+Layer / Grid Design
+*******************/
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #2B221E;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*******************
+Global HTML ELEMENT
+*******************/
+
+.btn {
+    display: inline-block;
+    font-size: 50px;
+    border: 1px solid #9DB3B1;
+    background: #9DB3B1;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+/*******************
+Utilities
+*******************/
+
+.text-center {
+    text-align: center;
+}
+
+
+/*******************
+Nav
+*******************/
+
+nav {
+    position: relative;
+    background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+}
+
+.nav-logo {
+    display: block;
+    color: #2B221E;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    float: left;
+}
+
+.nav-list {
+    list-style: none;
+    float: right;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.nav-list li:last-of-type {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.nav-content {
+    position: absolute;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-content h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.nav-content p {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
